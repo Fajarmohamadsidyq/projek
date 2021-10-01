@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Latihan Projek Fajar XII RPL 1</title>
 </head>
-<body>
+<body style="background-color:aqua;">
     <fieldset>
         <legend>Input Data Barang</legend>
         <form action="proses.php" method="post">

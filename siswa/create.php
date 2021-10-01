@@ -12,7 +12,7 @@ include '../database.php';
 $barang = new Barang();
 $mahasiswa = new Siswa();
 ?>
-<body>
+<body style="background-color:aqua;">
     <fieldset>
         <legend>Input Data Siswa</legend>
         <form action="proses.php" method="post">

@@ -10,8 +10,8 @@
 <body style="background-color:aqua;">
     <center>
         <nav>
-            <a href="barang/index.php">Data Barang</a> |
-            <a href="siswa/index.php">Data Siswa</a>
+            <a href="/barang/index.php">Data Barang</a> |
+            <a href="/siswa/index.php">Data Siswa</a>
         </nav>
     </center>
     <center>Data Barang</center>
