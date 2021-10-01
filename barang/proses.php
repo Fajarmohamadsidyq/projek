@@ -9,8 +9,10 @@ if (isset($_POST['save'])) {
     $harga = $_POST['harga'];
     $nama = $_POST['nama'];
 
-    if (aksi == "create") {
-        $barang->create($kode_barang, $harga, $nama);
+    var_dump($aksi);
+
+    if ($aksi == "create") {
+        $barang->create($harga, $nama);
         header("location:index.php");
     } elseif ($aksi == "update") {
         $barang->update($kode_barang, $harga, $nama);

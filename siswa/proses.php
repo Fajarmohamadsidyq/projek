@@ -11,7 +11,7 @@ if (isset($_POST['save'])) {
     $kode_barang = $_POST['kode_barang'];
 
     if ($aksi == "create") {
-        $mahasiswa->create($id, $nama, $kelas, $alamat, $kode_barang);
+        $mahasiswa->create($nama, $kelas, $alamat, $kode_barang);
         header("location:index.php");
     } elseif ($aksi == "update") {
         $mahasiswa->update($id, $nama, $kelas, $alamat, $kode_barang);

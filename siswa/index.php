@@ -21,11 +21,11 @@
         <a href="create.php">Tambah Data Siswa</a>
         <table border="1">
             <tr>
-                <th>ID Siswa</th>
+                <th>no</th>
                 <th>Nama Siswa</th>
                 <th>Kelas</th>
                 <th>Alamat</th>
-                <th>Kode Barang</th>
+                <th>Barang yang di beli</th>
                 <th colspan="3">Aksi</th>
             </tr>
             <?php
@@ -37,11 +37,10 @@ foreach ($mahasiswa->index() as $data) {
     ?>
                 <tr>
                     <td><?php echo $no++; ?></td>
-                    <td><?php echo $data['id_siswa']; ?></td>
                     <td><?php echo $data['nama']; ?></td>
                     <td><?php echo $data['kelas']; ?></td>
                     <td><?php echo $data['alamat']; ?></td>
-                    <td><?php echo $data['kode_barang']; ?></td>
+                    <td><?php echo $data['nama_barang']; ?></td>
 
                     <td>
                         <a href="show.php?id=<?php echo $data['id_siswa']; ?>">Show</a>

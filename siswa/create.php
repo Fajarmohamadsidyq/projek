@@ -9,6 +9,7 @@
 </head>
 <?php
 include '../database.php';
+$barang = new Barang();
 $mahasiswa = new Siswa();
 ?>
 <body>
@@ -34,19 +35,19 @@ $mahasiswa = new Siswa();
                     <td><input type="text" name="alamat"></td>
                 </tr>
                 <tr>
-                    <th>Kode Barang</th>
+                    <th>Barang yang di beli</th>
                     <td>
                         <select name="kode_barang">
                             <?php
 foreach ($barang->index() as $data) {?>
-                                <option value="<?php echo $data['kode_barang']; ?>"><?php echo $data['nama']; ?></option>
+                                <option value="<?php echo $data['kode_barang']; ?>"><?php echo $data['nama_barang']; ?></option>
                             <?php }?>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <th>
-                        <input type="submit" name="save" value="Input">
+                        <button type="submit" name="save"> Input </button>
                     </th>
                 </tr>
             </table>
