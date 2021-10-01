@@ -9,7 +9,7 @@
 </head>
 <body>
     <fieldset>
-        <legend>Input Data Dosen</legend>
+        <legend>Input Data Barang</legend>
         <form action="proses.php" method="post">
         <input type="hidden" name="aksi" value="create">
             <table>

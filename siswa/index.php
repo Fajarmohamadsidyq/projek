@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-color:aqua;">
     <center>
         <nav>
             <a href="/dosen">Data barang</a> |
@@ -16,8 +16,8 @@
         </nav>
     </center>
     <center>Data Siswa</center>
+    <center>
     <fieldset>
-        <legend>Data Siswa</legend>
         <a href="create.php">Tambah Data Siswa</a>
         <table border="1">
             <tr>
@@ -62,6 +62,6 @@ foreach ($mahasiswa->index() as $data) {
 }
 ?>
     </fieldset>
+    </center>
 </body>
-
 </html>

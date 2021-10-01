@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <center>
     <?php
 include '../database.php';
 $barang = new Barang();
@@ -35,5 +36,6 @@ foreach ($barang->show($_GET['kode_barang']) as $data) {
             </tr>
         </table>
     </fieldset>
+    </center>
 </body>
 </html>

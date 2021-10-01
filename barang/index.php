@@ -7,17 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-
-<body>
+<body style="background-color:aqua;">
     <center>
         <nav>
-            <a href="barang">Data Barang</a> |
-            <a href="siswa">Data Siswa</a>
+            <a href="barang/index.php">Data Barang</a> |
+            <a href="siswa/index.php">Data Siswa</a>
         </nav>
     </center>
     <center>Data Barang</center>
+    <center>
     <fieldset>
-        <legend>Data Barang</legend>
         <a href="create.php">Tambah barang</a>
         <table border="1">
             <tr>
@@ -57,5 +56,6 @@ foreach ($barang->index() as $data) {
 }
 ?>
     </fieldset>
+    </center>
 </body>
 </html>
